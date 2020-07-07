@@ -1,0 +1,141 @@
+html {
+  background: #2a2d2d;
+  padding: 50px 100px 50px 100px;
+}
+
+@keyframes onOff {
+  to {
+    opacity: 0.2;
+  }
+}
+
+#light {
+  width: 35px;
+  animation: onOff 1s infinite;
+  height: 50px;
+  background: white;
+  border: solid 3px #285084;
+  border-top: solid 10px #285084;
+  margin: 0 auto 0 auto;
+  box-shadow: -7px 0px 10px white;
+}
+
+#top1 {
+  width: 300px;
+  height: 15px;
+  background: #285084;
+  margin: 0 auto 0 auto;
+}
+
+#top2 {
+  width: 350px;
+  height: 15px;
+  background: #285084;
+  margin: 0 auto 0 auto;
+}
+
+#top3,
+#bottom {
+  width: 400px;
+  height: 40px;
+  background: #285084;
+  margin: 0 auto 0 auto;
+}
+
+h1 {
+  display: inline;
+  color: white;
+}
+
+#sticker h1 {
+  margin: 15% 0 0 14%;
+  padding: 0 10% 0 10%;
+  background: black;
+}
+
+.doors {
+  position: relative;
+  margin: 0 auto 0 auto;
+  width: 355px;
+  height: 500px;
+  background: #285084;
+  display: flex;
+  flex-direction: column;
+}
+
+.doors:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.windowl {
+  margin-top: 20px;
+  position: absolute;
+  background: white;
+  width: 100px;
+  height: 100px;
+  right: 3.5vw;
+}
+
+.windowr {
+  margin-top: 20px;
+  display: inline;
+  position: absolute;
+  background: white;
+  width: 100px;
+  height: 100px;
+  left: 3.5vw;
+}
+
+.left {
+  display: inline;
+  position: absolute;
+  left: 4vw;
+  background: #0c1b57;
+  width: 6.5em;
+  height: 3.5em;
+}
+
+.right {
+  display: inline;
+  position: absolute;
+  right: 4vw;
+  background: #0c1b57;
+  width: 6.5em;
+  height: 3.5em;
+}
+
+.first {
+  margin-top: 160px;
+  margin-bottom: 50px;
+}
+
+.second,
+.third {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.doors.galaxy {
+  background-image: url("https://i.pinimg.com/564x/81/d1/7a/81d17af7e7fba4de0ea2e70e10c605d4.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.windowl.hide {
+  opacity: 0.5;
+}
+
+.windowr.hide {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px) {
+  .doors {
+    position: relative;
+    margin: 0 auto 0 auto;
+  }
+}
